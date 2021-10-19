@@ -178,3 +178,13 @@ Database 'tmp_m1_rb_fsevent_development' already exists
 ** Execute db:abort_if_pending_migrations
 ** Execute db:setup
 ```
+
+----
+environments:
+- Ruby 2.6.8
+- rb-inotify-0.10.1
+- Docker
+  - ruby:2.6.8-slim-stretch
+  - Docker version 20.10.8, build 3967b7d
+- rails 6.1.4.1
+- bundler 2.2.26
