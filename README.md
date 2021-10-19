@@ -188,6 +188,9 @@ environments:
   - Docker version 20.10.8, build 3967b7d
 - rails 6.1.4.1
 - bundler 2.2.26
+- MacBook Air (M1, 2020)
+  - macOS Big Sur version 11.6 (20G165)
+  - Chip Apple M1
 
 repo reproduced:
 - https://github.com/sanemat/tmp-m1-rb-fsevent
