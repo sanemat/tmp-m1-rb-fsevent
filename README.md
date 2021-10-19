@@ -188,3 +188,6 @@ environments:
   - Docker version 20.10.8, build 3967b7d
 - rails 6.1.4.1
 - bundler 2.2.26
+
+repo reproduced:
+- https://github.com/sanemat/tmp-m1-rb-fsevent
