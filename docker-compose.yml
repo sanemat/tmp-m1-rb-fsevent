@@ -5,9 +5,13 @@ services:
     platform: linux/amd64
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: tmp_m1_rb_fsevent_development
     ports:
       - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
   web:
     build: .
     platform: linux/amd64
@@ -18,3 +22,5 @@ services:
       - "3000:3000"
     depends_on:
       - db
+volumes:
+  mysql_data:
